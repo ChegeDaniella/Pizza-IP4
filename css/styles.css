@@ -1,31 +1,35 @@
 .home {
     background-image: url(../images/cover.jpg);
-    height: 600px;
+    height: 650px;
     background-repeat: no-repeat;
     background-size: cover; 
 }
-.navbar {
+.navbarc {
     overflow: hidden;
     background-color: #333;
     position: fixed;
     top: 0;
     width: 100%;
+    padding: -10%;
 } 
-  .navbar a {
-    float: left;
+  .navbarc a {
+    float: right;
     display: block;
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: left;
+    /* padding-left: 20%; */
     text-decoration: none;
     font-size: 17px;
+    margin: 30px;
 }
-  .navbar a:hover {
+  .navbarc a:hover {
     background: #ddd;
+    
     color: black;
+    
 }
   
-.name {
+#name {
     font-family: 'Times New Roman', Times, serif;
     
     color: black;
@@ -42,6 +46,12 @@
 .heading {
     text-align: center;
 }
+.container {
+    background-image: url("../images/anime.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 .facts {
     text-align: center;
 }
@@ -49,4 +59,12 @@
     text-align: center;
     border: 2px solid black;
     height: 150px;
+}
+.slide {
+    text-align: center;
+    font-size: 200%;
+}
+.simim {
+    display: none;
+    text-align: center;
 }
