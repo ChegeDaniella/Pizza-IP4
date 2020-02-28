@@ -3,7 +3,9 @@ $(document).ready(function(){
         $(".simim").slideToggle();
     });
     $("#submit").click(function(){
-        alert($(".custom-select").val());
+        var size=($(".size").val());
+        var crust=($(".crust").val());
+        alert(size+" "+crust).val()
     });
 });
 
