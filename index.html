@@ -5,6 +5,8 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza</title>
@@ -15,15 +17,14 @@
     <div class="navbarc">
         <a href=#order>Order</a>
         <a href="#about">About Us</a>
-        <a href=#home>Home</a>
-        
-        
+        <a href=#home>Home</a>   
     </div>  
     <div id="name">
      <p>THE LORD OF THE PIZZA</p>   
       </div>
-    </div><br>
+    </div>
     <a name="about"></a>
+    <div id="about">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -49,21 +50,40 @@
     </div>    
         <div class="slide">Click for a smile or a cringe.</div>
         <div class="simim"><img src="images/harley.gif"></div>
+        </div><br>
+        <div class="moving">
+            <img src="images/peperroni.jpeg">
+            <img src="images/pizza2.jpeg"> 
+            <img src="images/pizza3.jpeg">
+            
+        </div>
         <a name="order"></a>
-        <form>
+        <form class="form">
             <label>Select size of pizza</label>
             <select class="size">
                 <option selected>Select Size</option>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
-            </select>
-            <label>Select size of pizza</label>
+            </select><br>
+            <label>Select crust of pizza</label>
             <select class="crust">
-                <option selected>Select Size</option>
+                <option selected>Select Crust</option>
                 <option value="thin-crusted">Thin-crust</option>
                 <option value="crispy">Crispy</option>
                 <option value="stuffed">Stuffed</option>
-            </select>
+            </select><br>
+            <label>Select toppings for pizza</label><br>
+            <input type="checkbox" id="pinapples" name="pinapples">
+            <label for="pinapples">Pineapples</label>
+            <input type="checkbox" id="sausage" name="sausage">
+            <label for="sausage">Sausage</label>
+            <input type="checkbox" id="bacon" name="bacon">
+            <label for="bacon">Bacon</label>
+            <input type="checkbox" id="extraCheese" name="extraCheese">
+            <label for="extraCheese">Extra Cheese</label>
+            <input type="checkbox" id="pepperoni" name="pepperoni">
+            <label for="pepperoni">pepperoni</label>
+            
 
         </form>
         <button id="submit">Submit</button>

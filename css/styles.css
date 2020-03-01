@@ -1,5 +1,5 @@
 .home {
-    background-image: url(../images/cover.jpg);
+    background-image: url(../images/cover4.jpeg);
     height: 650px;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -20,7 +20,7 @@
     /* padding-left: 20%; */
     text-decoration: none;
     font-size: 17px;
-    margin: 30px;
+    margin: 20px;
 }
   .navbarc a:hover {
     background: #ddd;
@@ -30,17 +30,23 @@
 }
   
 #name {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Black Ops One;
     
     color: black;
-    padding-top: 10%;
+    padding-top: 15%;
     padding-left: 60%;
     font-size: 70px;
+}
+#about {
+    background-color: grey;
+    height: 650px;
 }
 .about {
     text-align: center;
     border: 2px solid black;
-    height: 120px;
+    height: 180px;
+    font-family: Kaushan Script;
+    font-size: 20px;
 
 }
 .heading {
@@ -58,7 +64,9 @@
 .fun {
     text-align: center;
     border: 2px solid black;
-    height: 150px;
+    height: 180px;
+    font-family: Kaushan Script;
+    font-size: 20px;
 }
 .slide {
     text-align: center;
@@ -67,4 +75,16 @@
 .simim {
     display: none;
     text-align: center;
+}
+.form {
+    text-align: center;
+    border: 2px solid black;
+    /* margin-left: 6%;
+    margin-right: 6%; */
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    width: 50%;  
+}
+.moving {
+    animation-direction: normal;
 }

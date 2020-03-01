@@ -15,3 +15,8 @@ function Pizza(size,crust,toppings,prizes){
     this.toppings = toppings;
     this.prizes = prizes;
 }
+function size(){
+    this.small = 500;
+    this.medium =900;
+    this.large =1000;
+}
