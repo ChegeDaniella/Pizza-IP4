@@ -15,6 +15,7 @@ function Pizza(size,crust,toppings,prizes){
     this.toppings = toppings;
     this.prizes = prizes;
 }
+document.getElementById("button").onclick=function(){
 var size=["small","medium","large"]
 var amount = 0;
 var adder =0 ;
@@ -28,11 +29,27 @@ function smallsize(){
 }
 function mediumsize(){
     valueTaker = document.getElementById("medium").val();
-    selectedsize = size[1];
-    alert(selectedsize)
+    selectedsize = size[1];    
 }
 function largesize(){
     valueTaker = document.getElementById("large").val();
-    selectedsize = size[2];
-    alert(selectedsize)
+    selectedsize = size[2];  
 }
+function size(){
+    if (valueTaker==500){
+        amount=adder+500;
+        alert("You have selected"+" "+selectedsize+" "+"pizza size and amount is"+" "+amount);
+        amount =0;
+        selectedsize=null;
+    }else if (valueTaker==800){
+        amount = adder + 800;
+        alert("You have selected"+" "+selectedsize+" "+"pizza size and amount is"+" "+amount);
+        amount =0;
+        selectedsize=null;
+    }else if (valueTaker==1000){
+        amount = adder + 1000;
+        alert("You have selected"+" "+selectedsize+" "+"pizza size and amount is"+" "+amount);
+        amount =0;
+        selectedsize=null;
+    }
+}};
