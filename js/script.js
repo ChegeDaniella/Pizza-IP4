@@ -13,7 +13,7 @@ function Pizza(size,crust,toppings,prizes){
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
-    this.prizes = prizes;
+    
 }
 Pizza.prototype.cost = function(){
     var cost = 0;
@@ -24,8 +24,18 @@ Pizza.prototype.cost = function(){
     }else {
         cost= 1000;
     }
-    $("input[name=toppings]:checked").each(function(){
-        cost =parseInt(cost) + parseInt($(this.val()))
+Pizza.prototype.cost2 = function() {
+    var cost2 = 0;
+    if(this.crust === "thin-crusted"){
+        cost2 = 300;
+    }else if(this.crust === "crispy"){
+        cost2 = 200;
+    }else {
+        cost = 100
+    }
+}    
+    $("input[name='toppings[]']:checked").each(function(){
+        cost =parseInt(cost) + parseInt($(this.val()));
     });
     return cost;
 }
