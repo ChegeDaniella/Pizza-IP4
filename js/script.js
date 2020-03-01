@@ -9,7 +9,7 @@ $(document).ready(function(){
     // });
 });
 
-function Pizza(size,crust,toppings,prizes){
+function Pizza(size,crust,toppings){
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
@@ -35,7 +35,7 @@ Pizza.prototype.cost2 = function() {
     }
 }    
     $("input[name='toppings[]']:checked").each(function(){
-        cost =parseInt(cost) + parseInt($(this.val()));
+        cost =parseInt(cost2) + parseInt(cost) + parseInt($(this.val()));
     });
     return cost;
 }
