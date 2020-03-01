@@ -24,6 +24,10 @@ Pizza.prototype.cost = function(){
     }else {
         cost= 1000;
     }
+    $("input[name=toppings]:checked").each(function(){
+        cost =parseInt(cost) + parseInt($(this.val()))
+    });
+    return cost;
 }
 // document.getElementById("button").onclick=function(){
 // var size=["small","medium","large"]
