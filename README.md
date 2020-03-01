@@ -14,5 +14,15 @@ This project is a web based application where the clients **The lord Of pizza** 
    - A form is provided for filling the order
    - Responsive website
    - Messages the user back
-   
+## Technologies Used
+In the making of this web based application the languages used were HTML,CSS and javascript.Javascript and the jQuery library was in charge of the back-end development.
+
+# contact information.
+Email:chegedaniella@gmail.com
+
+# License
+MIT License
+copyright(c) 2020 Daniella Wangechi Chege
+
+
 
