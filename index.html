@@ -49,11 +49,13 @@
         <div class="slide">Click for a smile or a cringe.</div>
         <div class="simim"><img src="images/harley.gif"></div>
         </div><br>
+        <div class=head><h2>ORDER OUR ITEMS</h2></div>
+        <div class="container">
         <div class="moving">
             <img src="images/peperroni.jpeg">
             <img src="images/pizza2.jpeg"> 
-            <img src="images/pizza3.jpeg">
-            
+            <img src="images/pizza3.jpeg">   
+        </div>
         </div>
         <a name="order"></a><br><br>
         <form id="form">
@@ -83,8 +85,17 @@
             <input type="checkbox" id="extraCheese" value="20" name="toppings[]">
             <label for="pepperoni">pepperoni</label>
             <input type="checkbox" id="pepperoni" value="30" name="toppings[]"><br>
-            <button id="submit">Submit</button>
-
+            <button id="submit">Submit</button><br>
+            <textarea name="total" rows="9" cols="30" id="info" placeholder="Your message will show here..."></textarea><br>
+        </form>
+        <form>
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname"><br>
+            <label for="address">Enter Address:</label><br>
+            <input type="text" id="address"><br>
+            <label for="number">Phone Number:</label><br>
+            <input type="text" id="number"><br>
+            
         </form>
         <script src="js/jquery-3.4.1.js"></script>
         <script src="js/script.js"></script>

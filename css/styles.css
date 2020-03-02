@@ -83,8 +83,9 @@
     margin-right: 6%; */
     /* padding-left: 10%;
     padding-right: 10%; */
-    width: 50%;  
+     
 }
-.moving {
-    animation-direction: normal;
+
+.head {
+    text-align: center;
 }

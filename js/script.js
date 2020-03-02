@@ -26,31 +26,55 @@ Pizza.prototype.cost = function(){
     }
     
 Pizza.prototype.cost2 = function() {
-    var cost2 = 0;
+    var costNew = 0;
     if(this.crust === "thin-crusted"){
-        cost2 = 300;
+        costNew = 300;
     }else if(this.crust === "crispy"){
-        cost2 = 200;
+        costNew = 200;
     }else {
-        cost = 100
+        costNew = 100
     }
 }    
     $("input[name='toppings[]']:checked").each(function(){
-        cost =parseInt(cost2) + parseInt(cost) + parseInt($(this.val()));
+        cost =parseInt(costNew) + parseInt(cost) + parseInt($(this.val()));
     });
     return cost;
 }
-// document.getElementById("submit").onclick =function(){
-
-// }
 $("#form").submit(function(event){
     event.preventDefault();
     var size = $("select.size").val();
     var toppings  =$("input[name='toppings[]']:checked").val();
-    var top=document.getElementById("sausage").val();
-    alert(toppings);
-    alert(top)
+    var crust = $("select.crust").val();
+    var pizzaOrder= new Pizza(size,crust,toppings);
+    var cost= pizzaOrder.cost();
+    alert( size + toppings + crust + pizzaOrder)
+    $("#info").html("Size"+" "+ size)
+    $("#info").append("Toppings:"+" "+ toppings)
+    $("#info").append("Total cost:"+" "+ cost)  
 });
+document.getElementById("button").onclick =function(){
+    var name = ""
+    var email = ""
+    var comment = ""
+    
+    name=document.getElementById("name").value
+    email=document.getElementById("email").value
+    comment = document.getElementById("info").value
+    if( name == ""){
+      alert("please key in your name")
+      return false
+    }
+    if( email == "" ){
+      alert("please key in your mail")
+      return false
+    }
+    if( comment == ""){
+      alert("please key in comment")
+    }
+    else{
+      alert( "thanks " +name+ " we have recieved your cooment")
+    }
+  
 // document.getElementById("button").onclick=function(){
 // var size=["small","medium","large"]
 // var amount = 0;
