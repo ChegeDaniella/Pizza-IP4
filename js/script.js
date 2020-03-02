@@ -24,6 +24,7 @@ Pizza.prototype.cost = function(){
     }else {
         cost= 1000;
     }
+    
 Pizza.prototype.cost2 = function() {
     var cost2 = 0;
     if(this.crust === "thin-crusted"){
@@ -45,7 +46,10 @@ Pizza.prototype.cost2 = function() {
 $("#form").submit(function(event){
     event.preventDefault();
     var size = $("select.size").val();
-    alert(size);
+    var toppings  =$("input[name='toppings[]']:checked").val();
+    var top=document.getElementById("sausage").val();
+    alert(toppings);
+    alert(top)
 });
 // document.getElementById("button").onclick=function(){
 // var size=["small","medium","large"]
