@@ -24,5 +24,7 @@ Email:chegedaniella@gmail.com
 MIT License
 copyright(c) 2020 Daniella Wangechi Chege
 
+https://opensource.org/licenses/MIT
+
 
 
