@@ -53,63 +53,28 @@ $("#form").submit(function(event){
     $("#info").append("Total cost:"+" "+ cost)  
 });
 document.getElementById("button").onclick =function(){
-    var name = ""
-    var email = ""
-    var comment = ""
+    var fname = ""
+    var address = ""
+    var number = ""
     
-    name=document.getElementById("name").value
-    email=document.getElementById("email").value
-    comment = document.getElementById("info").value
-    if( name == ""){
+    fname=document.getElementById("fname").value
+    address=document.getElementById("address").value
+    number = document.getElementById("number").value
+    if( fname == ""){
       alert("please key in your name")
       return false
     }
-    if( email == "" ){
-      alert("please key in your mail")
+    if( address == "" ){
+      alert("please key in your address")
       return false
     }
-    if( comment == ""){
-      alert("please key in comment")
+    if( number == ""){
+      alert("please key in phone number")
     }
     else{
-      alert( "thanks " +name+ " we have recieved your cooment")
+      alert( "Thanks " +name+ " "+"we have recieved your order")
     }
+}
   
-// document.getElementById("button").onclick=function(){
-// var size=["small","medium","large"]
-// var amount = 0;
-// var adder =0 ;
-// var valueTaker;
-// var selectedsize;
 
-// function smallsize(){
-//     valueTaker = document.getElementById("small").val();
-//     selectedsize = size[0];
-//     alert(selectedsize)
-// }
-// function mediumsize(){
-//     valueTaker = document.getElementById("medium").val();
-//     selectedsize = size[1];    
-// }
-// function largesize(){
-//     valueTaker = document.getElementById("large").val();
-//     selectedsize = size[2];  
-// }
-// function size(){
-//     if (valueTaker==500){
-//         amount=adder+500;
-//         alert("You have selected"+" "+selectedsize+" "+"pizza size and amount is"+" "+amount);
-//         amount =0;
-//         selectedsize=null;
-//     }else if (valueTaker==800){
-//         amount = adder + 800;
-//         alert("You have selected"+" "+selectedsize+" "+"pizza size and amount is"+" "+amount);
-//         amount =0;
-//         selectedsize=null;
-//     }else if (valueTaker==1000){
-//         amount = adder + 1000;
-//         alert("You have selected"+" "+selectedsize+" "+"pizza size and amount is"+" "+amount);
-//         amount =0;
-//         selectedsize=null;
-//     }
-// }};
+
