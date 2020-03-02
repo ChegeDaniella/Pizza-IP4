@@ -1,0 +1,101 @@
+.home {
+    background-image: url(../images/cover4.jpeg);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.navbarc {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: -10%;
+} 
+  .navbarc a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    /* padding-left: 20%; */
+    text-decoration: none;
+    font-size: 17px;
+    margin: 20px;
+}
+  .navbarc a:hover {
+    background: #ddd;
+    
+    color: black;
+    
+}
+  
+#name {
+    font-family: Black Ops One;
+    
+    color: black;
+    padding-top: 15%;
+    padding-left: 60%;
+    font-size: 70px;
+}
+#about {
+    background-color: grey;
+    height: 650px;
+}
+.about {
+    text-align: center;
+    border: 2px solid black;
+    height: 180px;
+    font-family: Kaushan Script;
+    font-size: 20px;
+
+}
+.heading {
+    text-align: center;
+}
+.container {
+    background-image: url("../images/anime.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.facts {
+    text-align: center;
+}
+.fun {
+    text-align: center;
+    border: 2px solid black;
+    height: 180px;
+    font-family: Kaushan Script;
+    font-size: 20px;
+}
+.slide {
+    text-align: center;
+    font-size: 200%;
+}
+.simim {
+    display: none;
+    text-align: center;
+}
+#form {
+    border: 2px solid black;
+    /* margin-left: 6%;
+    margin-right: 6%; */
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    text-align: center;
+    padding-left: 10%;
+}
+.head {
+    text-align: center;
+}
+.form-group {
+    border: 2px solid black;
+    /* margin-left: 6%;
+    margin-right: 6%; */
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    text-align: center;
+    padding-left: 10%;
+    width: 40%;
+}
+

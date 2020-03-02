@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+<body>
+    <a name="home"></a>
+    <div class="home">
+    <div class="navbarc">
+        <a href=#order>Order</a>
+        <a href="#about">About Us</a>
+        <a href=#home>Home</a>   
+    </div>  
+    <div id="name">
+     <p>THE LORD OF THE PIZZA</p>   
+      </div>
+    </div>
+    <a name="about"></a>
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+              <div class="heading"><h3>ABOUT US</h3></div>
+            <div class="about">
+                <p>Al Forno Restaurant opened on January 2, 1980. Chef-owners Johanne Killeen & George Germon bring simple renditions of food rooted in the various regions of Italy to their riverfront restaurant kitchen. Dishes are re-crafted to reflect the products of New England's farms and waters cooked in blazing hot ovens and on grills over hardwood charcoal fires.</p>
+            </div>  
+            </div>
+            <div class="col-md-6">
+            <div class="facts"><h3>FUN FACTS</h3></div> 
+            <div class="fun">   
+            <ol>
+                <li>You can order pizza from space</li>
+                <li>Saturday is the most popular night to order pizza</li>
+                <li>Common pizza toppings in Japan include squid and mayo</li>
+                <li>In 2013, Domino's made DVDs that smelled like pizza</li>
+                <li>Pizza Deliverers claim women are better tippers</li>
+                <li>Each person in America eats about 46 pizza slices a year.</li>
+            </ol> 
+                </div>
+            </div>
+        </div>
+    </div>    
+        <div class="slide">Click for a smile or a cringe.</div>
+        <div class="simim"><img src="images/harley.gif"></div>
+        </div><br>
+        <a name="order"></a><br><br>
+        <div class=head><h2>ORDER OUR ITEMS</h2></div>
+        <div class="container">
+        <div class="moving">
+            <img src="images/peperroni.jpeg">
+            <img src="images/pizza2.jpeg"> 
+            <img src="images/pizza3.jpeg">   
+        </div>
+        </div>
+        
+        <form id="form">
+            <h2>Create your Pizza</h2>
+            <label>Select size of pizza</label>
+            <select class="size">
+                <option selected>Select Size</option>
+                <option value="small" id="small">Small for 100/=</option>
+                <option value="medium" id="medium">Medium for 800/=</option>
+                <option value="large" id="large">Medium for 1000/=</option>
+            </select><br>
+            <label>Select crust of pizza</label>
+            <select class="crust">
+                <option selected>Select Crust</option>
+                <option value="thin-crusted">Thin-crust for 300/=</option>
+                <option value="crispy">Crispy for 200/=</option>
+                <option value="stuffed">Stuffed for 100/=</option>
+            </select><br>
+            <label >Select toppings for pizza</label><br>
+            <input type="checkbox" id="pinapples" value="50"name="toppings[]">
+            <label for="pinapples">Pineapples</label>
+            <input type="checkbox" id="sausage" value="60" name="toppings[]">
+            <label for="sausage">Sausage</label>
+            <input type="checkbox" id="bacon" value="40" name="toppings[]">
+            <label for="bacon">Bacon</label>
+            <input type="checkbox" id="extraCheese" value="30" name="toppings[]">
+            <label for="extraCheese">Extra Cheese</label>
+            <input type="checkbox" id="extraCheese" value="20" name="toppings[]">
+            <label for="pepperoni">pepperoni</label>
+            <input type="checkbox" id="pepperoni" value="30" name="toppings[]"><br>
+            <button id="submit">Submit</button><br>
+            <textarea name="total" rows="9" cols="30" id="info" placeholder="Your message will show here..."></textarea><br>
+        </form>
+        <form class="form-group">
+            <h2>Delivery Form</h2>
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname"><br>
+            <label for="address">Enter Address:</label><br>
+            <input type="text" id="address"><br>
+            <label for="number">Phone Number:</label><br>
+            <input type="text" id="number"><br>
+            <button id="button">Submit</button><br>
+            
+        </form>
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/script.js"></script>
+    
+</body>
+</html>
