@@ -10,14 +10,14 @@ This project is a web based application where the clients **The lord Of pizza** 
   - Appealing to the user
   - Show some foods they offer
 2. Itnerractive Interface
-   - When click it shows image.
-   - A form is provided for filling the order
-   - Responsive website
-   - Messages the user back
+- When click it shows image.
+- A form is provided for filling the order
+- Responsive website
+- Messages the user back
 ## Technologies Used
 In the making of this web based application the languages used were HTML,CSS and javascript.Javascript and the jQuery library was in charge of the back-end development.
 
-# contact information.
+# Contact information.
 Email:chegedaniella@gmail.com
 
 # License

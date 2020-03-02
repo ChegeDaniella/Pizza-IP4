@@ -39,6 +39,14 @@ Pizza.prototype.cost2 = function() {
     });
     return cost;
 }
+// document.getElementById("submit").onclick =function(){
+
+// }
+$("#form").submit(function(event){
+    event.preventDefault();
+    var size = $("select.size").val();
+    alert(size);
+});
 // document.getElementById("button").onclick=function(){
 // var size=["small","medium","large"]
 // var amount = 0;
