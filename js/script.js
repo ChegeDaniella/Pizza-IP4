@@ -20,7 +20,7 @@ Pizza.prototype.cost = function(){
         cost= 1000;
     }
     
-Pizza.prototype.cost2 = function() {
+Pizza.prototype.costNew = function() {
     var costNew = 0;
     if(this.crust === "thin-crusted"){
         costNew = 300;
@@ -29,11 +29,12 @@ Pizza.prototype.cost2 = function() {
     }else {
         costNew = 100
     }
-}    
+   
     $("input[name='toppings[]']:checked").each(function(){
         cost =parseInt(costNew) + parseInt(cost) + parseInt($(this.val()));
     });
     return cost;
+}
 }
 $("#form").submit(function(event){
     event.preventDefault();
@@ -42,7 +43,6 @@ $("#form").submit(function(event){
     var crust = $("select.crust").val();
     var pizzaOrder= new Pizza(size,crust,toppings);
     var cost= pizzaOrder.cost();
-    alert( size + toppings + crust + pizzaOrder)
     $("#info").html("Size"+" "+ size)
     $("#info").append("Toppings:"+" "+ toppings)
     $("#info").append("Total cost:"+" "+ cost)  
